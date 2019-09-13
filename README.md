@@ -15,10 +15,10 @@
 ## Screenshots
 <div align="center">
     <img width="250" src="./Screenshot/login.png">
-    <img width="250" src="./Screenshot/bygoogle.png">
-    <img width="250" src="./Screenshot/Screen2.png">
-    <img width="250" src="./Screenshot/Screen3.png">
-    <img width="250" src="./Screenshot/Screen4.png">
+    <img width="250" src="./Screenshot/byGoogle.png">
+    <img width="250" src="./Screenshot/screen2.png">
+    <img width="250" src="./Screenshot/screen3.png">
+    <img width="250" src="./Screenshot/screen4.png">
 </div>
 
 
