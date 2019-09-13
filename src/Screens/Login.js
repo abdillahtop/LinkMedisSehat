@@ -26,15 +26,15 @@ export default class App extends React.Component {
       webClientId: '951947602271-tp9iphsmvi2im6tvj0ntdpf72mubchfn.apps.googleusercontent.com',
     });
   }
- 
-  
-  loginWaiting (){
+
+
+  loginWaiting() {
     alert('Login via Masih bingung Configurasi')
     setTimeout(() => {
       this.props.navigation.navigate('Screen2')
     }, 500);
-  
-    
+
+
   }
 
   _signIn = async () => {
@@ -59,17 +59,17 @@ export default class App extends React.Component {
       }
     }
   };
- 
+
   render() {
-   
-        return (
-          <View style={styles.container}>
-            <Text style={{
-              fontSize: 30,
-              marginBottom: 20,
-              fontWeight: 'bold'
-            }}>Login</Text>
-            <TouchableOpacity style={{
+
+    return (
+      <View style={styles.container}>
+        <Text style={{
+          fontSize: 30,
+          marginBottom: 20,
+          fontWeight: 'bold'
+        }}>Login</Text>
+        <TouchableOpacity style={{
           backgroundColor: '#DD4B39',
           marginBottom: 15,
           justifyContent: 'center',
@@ -80,14 +80,14 @@ export default class App extends React.Component {
           borderWidth: 0.5,
           borderColor: '#aaa',
         }}
-        onPress={this._signIn}
+          onPress={this._signIn}
         >
-        <View style={{flexDirection: 'row'}}>
-        <FontAwesomeIcon icon={ faGooglePlus } style={{color: 'white', marginLeft:20}} size={ 26 }/>
-          <Text style={{color: 'white', paddingLeft: 20, fontSize: 18}}>Google</Text>
+          <View style={{ flexDirection: 'row' }}>
+            <FontAwesomeIcon icon={faGooglePlus} style={{ color: 'white', marginLeft: 20 }} size={26} />
+            <Text style={{ color: 'white', paddingLeft: 20, fontSize: 18 }}>Google</Text>
           </View>
         </TouchableOpacity>
-            <TouchableOpacity style={{
+        <TouchableOpacity style={{
           backgroundColor: '#405DE6',
           marginBottom: 15,
           justifyContent: 'center',
@@ -98,11 +98,11 @@ export default class App extends React.Component {
           borderWidth: 0.5,
           borderColor: '#aaa'
         }}
-        onPress={() => this.loginWaiting()}
+          onPress={() => this.loginWaiting()}
         >
-        <View style={{flexDirection: 'row'}}>
-        <FontAwesomeIcon icon={ faFacebook } style={{color: 'white', marginLeft:20}} size={ 26 }/>
-          <Text style={{color: 'white', paddingLeft: 20, fontSize: 18}}>Facebook</Text>
+          <View style={{ flexDirection: 'row' }}>
+            <FontAwesomeIcon icon={faFacebook} style={{ color: 'white', marginLeft: 20 }} size={26} />
+            <Text style={{ color: 'white', paddingLeft: 20, fontSize: 18 }}>Facebook</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity style={{
@@ -116,11 +116,11 @@ export default class App extends React.Component {
           borderWidth: 0.5,
           borderColor: '#aaa'
         }}
-        onPress={() => this.loginWaiting()}
+          onPress={() => this.loginWaiting()}
         >
-        <View style={{flexDirection: 'row'}}>
-        <FontAwesomeIcon icon={ faInstagram } style={{color: 'white', marginLeft:20}} size={ 26 }/>
-          <Text style={{color: 'white', paddingLeft: 20, fontSize: 18}}>Instagram</Text>
+          <View style={{ flexDirection: 'row' }}>
+            <FontAwesomeIcon icon={faInstagram} style={{ color: 'white', marginLeft: 20 }} size={26} />
+            <Text style={{ color: 'white', paddingLeft: 20, fontSize: 18 }}>Instagram</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity style={{
@@ -134,17 +134,17 @@ export default class App extends React.Component {
           borderWidth: 0.5,
           borderColor: '#aaa'
         }}
-        onPress={() => this.loginWaiting()}
+          onPress={() => this.loginWaiting()}
         >
-        <View style={{flexDirection: 'row'}}>
-        <FontAwesomeIcon icon={ faLinkedin } style={{color: 'white', marginLeft:20}} size={ 26 }/>
-          <Text style={{color: 'white', paddingLeft: 20, fontSize: 18}}>LinkedIn</Text>
+          <View style={{ flexDirection: 'row' }}>
+            <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white', marginLeft: 20 }} size={26} />
+            <Text style={{ color: 'white', paddingLeft: 20, fontSize: 18 }}>LinkedIn</Text>
           </View>
         </TouchableOpacity>
-          </View>
-        );
-      }
-    }
+      </View>
+    );
+  }
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -165,4 +165,3 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
 });
- 
